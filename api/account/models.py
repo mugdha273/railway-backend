@@ -24,6 +24,7 @@ class Account(AbstractBaseUser, PermissionsMixin):
     USERNAME_FIELD = 'email'
     REQUIRED_FIELDS = []
     objects = AccountManager()
+    
     class Meta:
         verbose_name = _('user')
         verbose_name_plural = _('users')
