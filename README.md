@@ -45,7 +45,7 @@ python manage.py runserver
 
 ## APIs in Use:
 
-1. http://127.0.0.1:8000/api/token/: to obtain token of an account.
+1. https://railway-backend.herokuapp.com/api/token/: to obtain token of an account.
 
 Curl Request: (Type your registered username and password in the body)
 ```
@@ -57,7 +57,7 @@ curl --location --request POST 'http://127.0.0.1:8000/api/token/' \
     "password": "<password>"
 }'
 ```
-2. SignUp/Registration: http://127.0.0.1:8000/api/users/register/
+2. SignUp/Registration: https://railway-backend.herokuapp.com/api/users/register/
 
 ```
 curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
