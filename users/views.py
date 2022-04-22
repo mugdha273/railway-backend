@@ -1,4 +1,5 @@
 from django.contrib.auth import authenticate
+from django.shortcuts import render
 from rest_framework import status
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
@@ -10,6 +11,7 @@ from users.serializers import UserRegistrationSerializer
 # Create your views here.
 
 # Generate Token Manually
+
 def get_tokens_for_user(user):
   refresh = RefreshToken.for_user(user)
   return {
