@@ -57,4 +57,24 @@ curl --location --request POST 'http://127.0.0.1:8000/api/token/' \
     "password": "<password>"
 }'
 ```
-2.
+2. SignUp/Registration: http://127.0.0.1:8000/api/users/register/
+
+```
+curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
+--header 'Content-Type: application/json' \
+--header 'Cookie: csrftoken=62KjlMixjCOIaieXB4eUNjQidMxmzhsxHmcrjhXZpaPlzMvZb4EhCqdOQNg5t8wx' \
+--data-raw '{
+    "first_name": "Mugdha",
+    "last_name": "Sharma" ,
+    "email": "mugdhasharma0327@gmail.com",
+    "phone_number": "9174400406",
+    "date_of_birth": "2002-03-27",
+    "password": "demopass",
+    "password2": "demopass",
+    "occupation": "student",
+    "gender": "female",
+    "city": "Indore" ,
+    "state": "MP" ,
+    "pincode": "452018"
+}'
+```
