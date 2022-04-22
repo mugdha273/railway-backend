@@ -78,3 +78,4 @@ curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
     "pincode": "452018"
 }'
 ```
+![image](https://user-images.githubusercontent.com/85048574/164679501-f959b33b-8096-47f5-a481-aad00b1a5f30.png)
