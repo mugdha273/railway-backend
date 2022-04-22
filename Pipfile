@@ -5,6 +5,8 @@ name = "pypi"
 
 [packages]
 django-cors-headers = "*"
+whitenoise = "*"
+django-heroku = "*"
 
 [dev-packages]
 

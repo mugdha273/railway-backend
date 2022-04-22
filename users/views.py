@@ -23,4 +23,4 @@ class UserRegistrationView(APIView):
     serializer.is_valid(raise_exception=True)
     user = serializer.save()
     token = get_tokens_for_user(user)
-    return Response({'token':token, 'msg':'Registration Successful'}, status=status.HTTP_201_CREATED)
+    return Response({'token':token, 'status':'Registration Successful'}, status=status.HTTP_201_CREATED)
