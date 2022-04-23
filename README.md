@@ -92,3 +92,13 @@ curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
 
  ```
  ![image](https://user-images.githubusercontent.com/85048574/164872876-bd7c11c5-0015-4b60-b77d-15c2eb90fe73.png)
+
+ 4. Trains: https://railway-backend.herokuapp.com/api/train/trains/
+
+ 5. Route: https://railway-backend.herokuapp.com/api/train/route/
+
+ 6. Train Status: https://railway-backend.herokuapp.com/api/train/train_status/
+
+ 7. Stations: https://railway-backend.herokuapp.com/api/train/station/
+ 
+ 8. Route Station: https://railway-backend.herokuapp.com/api/train/route-station/
