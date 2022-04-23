@@ -79,3 +79,16 @@ curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
 }'
 ```
 ![image](https://user-images.githubusercontent.com/85048574/164679501-f959b33b-8096-47f5-a481-aad00b1a5f30.png)
+
+ 3. Login: https://railway-backend.herokuapp.com/api/users/login/
+
+ ```
+ curl --location --request POST 'https://railway-backend.herokuapp.com/api/users/login/' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "email": "mugdhasharma0327@gmail.com",
+    "password": "demopass"
+}'
+
+ ```
+ ![image](https://user-images.githubusercontent.com/85048574/164872876-bd7c11c5-0015-4b60-b77d-15c2eb90fe73.png)
