@@ -25,7 +25,7 @@ class StationViews(ModelViewSet):
     queryset = Station.objects.all()
     permission_classes = [permissions.AllowAny]
 
-class RouteViews(ModelViewSet):
+class RouteStationViews(ModelViewSet):
     serializer_class = RouteStationSerializer
     queryset = RouteStation.objects.all()
     permission_classes = [permissions.AllowAny]
