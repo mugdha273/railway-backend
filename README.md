@@ -102,3 +102,20 @@ curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
  7. Stations: https://railway-backend.herokuapp.com/api/train/station/
  
  8. Route Station: https://railway-backend.herokuapp.com/api/train/route-station/
+
+ 9. Ticket Booking: https://railway-backend.herokuapp.com/api/booking/book/
+
+```
+curl --location --request POST 'https://railway-backend.herokuapp.com/api/booking/book/' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4MDUxMDc0LCJpYXQiOjE2NTA3NzEwNzQsImp0aSI6ImYwYzU2ZDdiNTJkZTQ2YzA5YmRjYzUzOGEzOWYyMGEzIiwidXNlcl9pZCI6Mn0.1wVZwFfDDLYCjcd3VdJQagu6fbWRuHngIMCsN8KUkyE' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "train_class": "1 AC",
+    "date_of_journey": "2022-04-29",
+    "train": 1,
+    "route": 1
+}'
+
+```
+
+![image](https://user-images.githubusercontent.com/85048574/164957242-6b476520-dbff-4419-a825-e054e6caf26c.png)
