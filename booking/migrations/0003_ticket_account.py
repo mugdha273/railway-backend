@@ -16,7 +16,7 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='ticket',
             name='account',
-            field=models.ForeignKey(default=1, on_delete=django.db.models.deletion.CASCADE, related_name='reg_user', to=settings.AUTH_USER_MODEL),
+            field=models.ForeignKey(default=2, on_delete=django.db.models.deletion.CASCADE, related_name='reg_user', to=settings.AUTH_USER_MODEL),
             preserve_default=False,
         ),
     ]
