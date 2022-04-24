@@ -119,3 +119,16 @@ curl --location --request POST 'https://railway-backend.herokuapp.com/api/bookin
 ```
 
 ![image](https://user-images.githubusercontent.com/85048574/164957242-6b476520-dbff-4419-a825-e054e6caf26c.png)
+
+10. Passenger Details: https://railway-backend.herokuapp.com/api/booking/passenger
+
+```
+curl --location --request GET 'https://railway-backend.herokuapp.com/api/booking/passenger' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4MDc3Njg2LCJpYXQiOjE2NTA3OTc2ODYsImp0aSI6IjVhOTZiZjMwZDA4NDRiODk4MjFhYmMyMDM3M2YwNDdkIiwidXNlcl9pZCI6Mn0.jFPzjS7yOECSJhlU3jQagWN7i7FT7Ti7LKBUhb06i8A' \
+--data-raw ''
+```
+
+![image](https://user-images.githubusercontent.com/85048574/164974997-f655a4a2-2cf9-48f8-9ce0-56d2730d0f11.png)
+
+
+
