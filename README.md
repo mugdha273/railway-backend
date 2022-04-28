@@ -113,7 +113,8 @@ curl --location --request POST 'https://railway-backend.herokuapp.com/api/bookin
     "train_class": "1 AC",
     "date_of_journey": "2022-04-29",
     "train": 1,
-    "route": 1
+    "route": 1,
+    "account": 5
 }'
 
 ```
