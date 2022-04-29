@@ -22,7 +22,11 @@ class TicketViewset(APIView):
             return Response(serializer.error_messages, status=status.HTTP_400_BAD_REQUEST)
         
         data = serializer.validated_data
+        a = request.user
+        # print(account.id)
+        data["account"] = a
         ticket =  Ticket.objects.create(**data)
+        ticket.save()
         ticket_serialized = TicketSerializer(ticket)
         return Response(ticket_serialized.data, status=status.HTTP_201_CREATED)
     

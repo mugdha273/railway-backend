@@ -106,15 +106,16 @@ curl --location --request POST 'http://127.0.0.1:8000/api/users/register/' \
  9. Ticket Booking: https://railway-backend.herokuapp.com/api/booking/book/
 
 ```
-curl --location --request POST 'https://railway-backend.herokuapp.com/api/booking/book/' \
---header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4MDUxMDc0LCJpYXQiOjE2NTA3NzEwNzQsImp0aSI6ImYwYzU2ZDdiNTJkZTQ2YzA5YmRjYzUzOGEzOWYyMGEzIiwidXNlcl9pZCI6Mn0.1wVZwFfDDLYCjcd3VdJQagu6fbWRuHngIMCsN8KUkyE' \
+curl --location --request POST 'http://127.0.0.1:8000/api/booking/book/' \
+--header 'Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjY4NDg2MDk4LCJpYXQiOjE2NTEyMDYwOTgsImp0aSI6IjQ4M2RiZWM5ZTdiYjRkODY4NzY5YTliNTNhZTg0M2IxIiwidXNlcl9pZCI6M30.9Um4LKWwSV4Iki4sz_mO9f_tuZ7t7l7e4X7ref6HuVU' \
 --header 'Content-Type: application/json' \
+--header 'Cookie: csrftoken=62KjlMixjCOIaieXB4eUNjQidMxmzhsxHmcrjhXZpaPlzMvZb4EhCqdOQNg5t8wx' \
 --data-raw '{
-    "train_class": "1 AC",
-    "date_of_journey": "2022-04-29",
-    "train": 1,
-    "route": 1,
-    "account": 5
+    "train_class": "2 AC",
+    "date_of_journey": "2022-05-20",
+    "account": 1,
+    "train": 4,
+    "route": 6
 }'
 
 ```
