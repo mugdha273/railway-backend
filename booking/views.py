@@ -26,7 +26,7 @@ class TicketViewset(APIView):
         # print(account.id)
         data["account"] = a
         ticket =  Ticket.objects.create(**data)
-        ticket.save()
+        # ticket.save()
         ticket_serialized = TicketSerializer(ticket)
         return Response(ticket_serialized.data, status=status.HTTP_201_CREATED)
     

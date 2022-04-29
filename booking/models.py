@@ -28,4 +28,4 @@ class Ticket(models.Model):
         self.seat_no = self.seat_no + random.randint(0, 1000)
         self.ticket_no = self.ticket_no + random.randint(0, 100000)
         self.pnr = self.pnr + random.randint(0, 100000) #to generate random ticket number each time
-        
+        super().save(*args, **kwargs)
